@@ -1,6 +1,6 @@
-#Gamemaker Studio 2 2d Shaders Foundations Exercises
+# Gamemaker Studio 2 2d Shaders Foundations Exercises
 
-##Notes
+## Notes
 
 There are differences between Unity's Shaderlab and GLSL(ES) that GMS2 uses.
 * The blending operation is actually not part of the shader language itself, rather is a separate API call.  You use either **gpu_set_blendmode()** or for more complicated modes **gpu_set_blendmode_ext()** for this purpose.  You also want to return the blend mode back to **bm_normal** afterwards so that other objects don't get drawn with the same blending mode.
